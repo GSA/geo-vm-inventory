@@ -1,0 +1,14 @@
+name: 'GSA/geo-vm-inventory'
+description: 'Scripts for the auditing and reconciliation of managed vmWare VM CMDB data'
+license: cc0-1.0
+openSourceProject: 1
+governmentWideReuseProject: 1
+tags:
+    - open-source
+    - opensource
+    - vmware
+    - servicenow
+    - javascript
+    - golang
+contact:
+    email: geo-cloudteam-serverautomation@gsa.gov
