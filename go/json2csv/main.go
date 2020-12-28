@@ -52,6 +52,7 @@ type VMProperties struct {
 	VMUsedStorageGB          int
 	Flags                    int
 	VirtualMachineTemplateID string
+	IP                       string
 }
 
 func main() {
@@ -95,7 +96,7 @@ func main() {
 		"LastPowerOnDate", "ExpireDays", "VMUniqueID", "ExternalReferenceId",
 		"IsManaged", "IsRogue", "VirtualMachineState", "Notes", "PlatformDetails",
 		"VirtualMachineID", "IsRunning", "HostReservationID", "HostID", "GuestOS",
-		"VMUsedStorageGB", "Flags", "VirtualMachineTemplateID"}
+		"VMUsedStorageGB", "Flags", "VirtualMachineTemplateID", "IP"}
 	writer.Write(heading)
 
 	for _, usance := range jsonData {
