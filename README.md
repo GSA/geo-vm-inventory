@@ -11,6 +11,7 @@ Scripts for the auditing and reconciliation of managed vmWare VM CMDB data
 ### go
 
   - **json2csv**: Golang program for converting vRO attributes JSON to CSV for import to spreadheet
+  - **importCMDB**: Golang program to import CSV files into sqlite3 database and normalize data ([README](go/importCMDB/README.md))
 
 ## Public domain
 
