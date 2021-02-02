@@ -7,11 +7,17 @@ records for vmWare virtual machines
 
 ***Important: because this is a `CGO` enabled package you are required to set the environment variable `CGO_ENABLED=1` and have a `gcc` compile present within your path.***
 
+### Dependencies ###
+
+- Golang build environment
+- gcc
+- [go-sqlite3](https://github.com/mattn/go-sqlite3)
+
 Compile and install the import tool
 
 ```
 export CGO_ENABLED=1
-go build github.com/GSA/geo-vm-inventory/go/importCMDB
+go get github.com/GSA/geo-vm-inventory/go/importCMDB
 ```
 
 If the csv files are named `snow.csv`, `vcac.csv` and `vcenter.csv` and in the current directory, then simply running the command will create the `cmdb_cleanup.db` database in the current directory, delete the tables (if they exist), import the csv files into the tables and normalize the data.
